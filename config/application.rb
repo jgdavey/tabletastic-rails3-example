@@ -7,9 +7,11 @@ Bundler.require :default, Rails.env
 
 module Tabletasticrails3
   class Application < Rails::Application
-    $LOAD_PATH.unshift File.join(Rails.root, '..', 'tabletastic', 'lib')
-    require 'tabletastic'
-    ActionView::Base.send :include, Tabletastic
+
+    # $LOAD_PATH.unshift File.join(Rails.root, '..', 'tabletastic', 'lib')
+    # require 'tabletastic'
+    # ActionView::Base.send :include, Tabletastic
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
