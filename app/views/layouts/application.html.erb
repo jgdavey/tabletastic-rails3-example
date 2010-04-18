@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Authors: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'blueprint/screen', 'application' %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<div id="container" class="container">
+
+  <% flash.each do |key, message| %>
+      <div class="<%= key %> notice"><%= message %></div>
+  <% end %>
+
+  <%= yield %>
+
+</div>
+
+</body>
+</html>

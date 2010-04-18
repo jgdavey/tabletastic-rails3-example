@@ -1,0 +1,11 @@
+<h1>Listing authors</h1>
+
+<%= table_for(@authors.all) do |t|
+  t.data :actions => :all do
+    t.cell :name
+    t.cell :downcased_name
+    t.cell :posts_count
+  end
+end %>
+
+<%= link_to 'New author', new_author_path %>
