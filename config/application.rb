@@ -34,6 +34,8 @@ module Tabletasticrails3
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
     # config.i18n.default_locale = :de
 
+    config.secret_token = "This is the tabletastic secret phrase of 30 or more characters"
+
     # Configure generators values. Many other options are available, be sure to check the documentation.
     # config.generators do |g|
     #   g.orm             :active_record
