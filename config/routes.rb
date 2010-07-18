@@ -1,4 +1,6 @@
 Tabletasticrails3::Application.routes.draw do |map|
+  resources :profiles
+
   resources :posts
 
   resources :authors
