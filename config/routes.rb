@@ -1,8 +1,6 @@
-Tabletasticrails3::Application.routes.draw do |map|
+Tabletasticrails3::Application.routes.draw do
   resources :profiles
-
   resources :posts
-
   resources :authors
 
   # The priority is based upon order of creation:
