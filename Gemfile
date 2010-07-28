@@ -2,14 +2,14 @@
 source 'http://rubygems.org'
 
 
-gem "rails", "3.0.0.beta4"
+gem "rails", "3.0.0.rc"
 
 ## Bundle edge rails:
 # gem "rails", :git => "git://github.com/rails/rails.git"
 
 # ActiveRecord requires a database adapter. By default,
 # Rails has selected sqlite3.
-gem "sqlite3-ruby", :require => "sqlite3"
+gem "sqlite3-ruby", '~> 1.2.5', :require => "sqlite3"
 
 gem "tabletastic", :path => "~/current/tabletastic"
 
