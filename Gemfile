@@ -11,7 +11,8 @@ gem "rails", "3.0.0.rc"
 # Rails has selected sqlite3.
 gem "sqlite3-ruby", '~> 1.2.5', :require => "sqlite3"
 
-gem "tabletastic", "0.2.0.pre3"
+gem "tabletastic", "0.2.0.pre4"
+gem "haml", "~> 3.0.15"
 
 ## Bundle the gems you use:
 # gem "bj"
