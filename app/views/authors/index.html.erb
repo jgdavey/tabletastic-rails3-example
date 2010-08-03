@@ -1,5 +1,14 @@
 <h1>Listing authors</h1>
 
-<%= table_for(@authors) %>
+<%= table_for(@authors) do |table| %>
+  <%= table.data do %>
+    <% table.cell :name %>
+  <% end %>
+  <tfoot>
+    <tr>
+      <td>What's up?!</td>
+    </tr>
+  </tfoot>
+<% end %>
 
 <%= link_to 'New author', new_author_path %>
